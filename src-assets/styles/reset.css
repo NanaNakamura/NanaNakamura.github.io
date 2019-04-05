@@ -1,0 +1,75 @@
+//--------------------------------------------------------------------------
+//  reset
+//--------------------------------------------------------------------------
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	vertical-align: middle;
+	font-size: 100%;
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+:before,:after{
+	box-sizing: inherit;
+	text-decoration: inherit;
+	vertical-align: inherit;
+}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{
+	display: block;
+}
+ol,ul{
+	list-style: none;
+}
+a{
+	-webkit-text-decoration-skip: objects;
+}
+b,strong{
+	font-weight: bolder;
+}
+em{
+	font-style: normal;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+hr{
+	display: block;
+}
+input{
+	border-radius: 0;
+}
+input,select{
+	vertical-align: middle;
+}
+input:focus,textarea:focus,select:focus{
+	outline: none;
+}
+textarea{
+	overflow: auto;
+	resize: vertical;
+}
+button,select{
+	text-transform: none;
+}
+button,[type="button"],[type="reset"],[type="submit"]{
+	cursor: pointer;
+}
+button,html [type="button"],[type="reset"],[type="submit"]{
+	-webkit-appearance: button;
+}
+[type="number"]{
+	width: auto;
+}
+svg:not(:root){
+	overflow: hidden;
+}
+audio,canvas,progress,video{
+	display: inline-block;
+}
