@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 //--------------------------------------------------------------------------
 //  reset
 //--------------------------------------------------------------------------
@@ -62,9 +61,16 @@ button,select{
 }
 button,[type="button"],[type="reset"],[type="submit"]{
   cursor: pointer;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
 }
 button,html [type="button"],[type="reset"],[type="submit"]{
-  -webkit-appearance: none;
+  -webkit-appearance: button;
+  appearance: button;
 }
 [type="number"]{
   width: auto;
