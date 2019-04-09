@@ -70,7 +70,6 @@ button,[type="button"],[type="reset"],[type="submit"]{
 }
 button,html [type="button"],[type="reset"],[type="submit"]{
   -webkit-appearance: button;
-  appearance: button;
 }
 [type="number"]{
   width: auto;
