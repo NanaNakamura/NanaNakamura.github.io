@@ -6,49 +6,14 @@ var CACHE_KEYS = [
 var urlsToCache = [
 	'./',
 	'./index.html',
-	'./offline.html',
-	'./qrcodescan/**/*',
-	'./stamp/**/*',
-	'./stampcard/**/*',
-	'./assets/js/**/*',
-	'./assets/img/**/*',
-	'./assets/css/**/*'
+	'./offline.html'
+	// './qrcodescan/**/*',
+	// './stamp/**/*',
+	// './stampcard/**/*',
+	// './assets/js/**/*',
+	// './assets/img/**/*',
+	// './assets/css/**/*'
 ];
-
-
-// self.addEventListener('install', function(event) {
-//   return install(event);
-// });
-
-// self.addEventListener('message', function(event) {
-//   return install(event);
-// });
-
-// const install = (event) => {
-//   return event.waitUntil(
-//     caches.open(CACHE_NAME)
-//       .then(function(cache) {
-//         urlsToCache.map(url => {
-//           return fetch(new Request(url)).then(response => {
-//             return cache.put(url, response);
-//           });
-//         })
-//       })
-//       .catch(function(err) {
-//         console.log(err);
-//       })
-//   );
-// }
-
-// // ボタンで更新する
-// navigator.serviceWorker.getRegistration()
-// .then(registration => {
-// 	registration.unregister();
-// })
-
-// // キャッシュされているスクリプトなどを更新する
-// const channel = new MessageChannel();
-// navigator.serviceWorker.controller.postMessage('update', [channel.port2]);
 
 // インストール処理
 self.addEventListener('install', function(event) {
@@ -58,7 +23,7 @@ self.addEventListener('install', function(event) {
 		.then(
 			function(cache){
 				console.log('インストール処理');
-				return cache.addAll(urlsToCache.map(url => new Request(url, {credentials: 'same-origin'}))); // 指定したリソースをキャッシュへ追加
+				return cache.addAll(urlsToCache); // 指定したリソースをキャッシュへ追加
 				// 1つでも失敗したらService Workerのインストールはスキップされる
 			}
 		)
