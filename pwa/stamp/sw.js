@@ -3,9 +3,9 @@
 // キャッシュファイルの指定
 var CACHE_VERSION = 'v1.0';
 var CACHE_NAME = 'stampcard-caches-' + CACHE_VERSION;
-// var CACHE_KEYS = [
-// 	CACHE_NAME
-// ];
+var CACHE_KEYS = [
+	// CACHE_NAME
+];
 console.log(CACHE_NAME);
 var urlsToCache = [
 	'./manifest.json',
