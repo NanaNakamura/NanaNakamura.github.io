@@ -5,6 +5,7 @@ var CACHE_KEYS = [
 ];
 var urlsToCache = [
 	'./',
+	'./manifest.json',
 	'./index.html',
 	'./offline.html',
 	// './qrcodescan/**/*',
