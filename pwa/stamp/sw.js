@@ -58,7 +58,7 @@ self.addEventListener('install', function(event) {
 		.then(
 			function(cache){
 				console.log('インストール処理');
-				return cache.addAll(urlsToCache); // 指定したリソースをキャッシュへ追加
+				return cache.addAll(urlsToCache.map(url => new Request(url, {credentials: 'same-origin'}))); // 指定したリソースをキャッシュへ追加
 				// 1つでも失敗したらService Workerのインストールはスキップされる
 			}
 		)
