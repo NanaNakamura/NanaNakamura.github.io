@@ -1,19 +1,64 @@
+// https://qiita.com/OMOIKANESAN/items/13a3dde525e33eb608ae
+
 // キャッシュファイルの指定
-var CACHE_NAME = 'stampcard-caches-v1';
+var CACHE_VERSION = 'v1';
+var CACHE_NAME = 'stampcard-caches-' + CACHE_VERSION;
 var CACHE_KEYS = [
 	CACHE_NAME
 ];
+console.log(CACHE_NAME);
 var urlsToCache = [
 	'./',
 	'./manifest.json',
 	'./index.html',
 	'./offline.html',
-	// './qrcodescan/**/*',
-	// './stamp/**/*',
-	// './stampcard/**/*',
-	'./assets/**/*.js',
-	'./assets/**/*.js',
-	'./assets/**/*.png',
+	'./qrcodescan/',
+	'./qrcodescan/index.html',
+	'./qrcodescan/js/llqrcode.js',
+	'./qrcodescan/js/webqr.js',
+	'./stamp/',
+	'./stamp/index.html',
+	'./stamp/pengin/',
+	'./stamp/pengin/index.html',
+	'./stamp/mejedo/',
+	'./stamp/mejedo/index.html',
+	'./stamp/kouseki/',
+	'./stamp/kouseki/index.html',
+	'./stamp/hana/',
+	'./stamp/hana/index.html',
+	'./stampcard/',
+	'./stampcard/index.html',
+	'./assets/img/icon.png',
+	'./assets/img/1.png',
+	'./assets/img/2.png',
+	'./assets/img/3.png',
+	'./assets/img/4.png',
+	'./assets/img/5.png',
+	'./assets/img/6.png',
+	'./assets/img/7.png',
+	'./assets/img/anubis.png',
+	'./assets/img/attention1.png',
+	'./assets/img/bastet.png',
+	'./assets/img/boy.png',
+	'./assets/img/hana.png',
+	'./assets/img/hastur.png',
+	'./assets/img/horus.png',
+	'./assets/img/kouseki.png',
+	'./assets/img/link.png',
+	'./assets/img/mejedo.png',
+	'./assets/img/mondai.png',
+	'./assets/img/p1.png',
+	'./assets/img/p2.png',
+	'./assets/img/p3.png',
+	'./assets/img/p4.png',
+	'./assets/img/p5.png',
+	'./assets/img/p6.png',
+	'./assets/img/pengin.png',
+	'./assets/img/ra.png',
+	'./assets/img/seth.png',
+	'./assets/img/toto.png',
+	'./assets/js/common.js',
+	'./assets/js/libs.js',
 	'./assets/css/common.css',
 	'./assets/css/index.css'
 ];
@@ -51,15 +96,6 @@ self.addEventListener('activate', event => {
 });
 
 // リソースフェッチ時のキャッシュロード処理
-// self.addEventListener('fetch', function(event) {
-// 	event.respondWith(
-// 		caches
-// 			.match(event.request)
-// 			.then(function(response) {
-// 				return response ? response : fetch(event.request);
-// 			})
-// 	);
-// });
 self.addEventListener('fetch', function(event) {
 	//ブラウザが回線に接続しているかをboolで返してくれる
 	var online = navigator.onLine;

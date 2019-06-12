@@ -104,16 +104,25 @@ function htmlEntities(str) {
 
 function read(a) {
 	var html = "<br>";
-	if (a.indexOf("http://") === 0 || a.indexOf("https://") === 0)
-		html += "<a target='_blank' href='" + a + "'>" + a + "</a><br>";
-	html += "<b>" + htmlEntities(a) + "</b><br><br>";
-	html += "3秒後に移動します";
-	document.getElementById("result").innerHTML = html;
-	setTimeout(function () {
-		// location.href = 'mypage.html?id='+ a + '';
-		location.href = a;
-		console.log(a)
-	}, 3000)
+	if (a.indexOf("url->") === 0) {
+		var url = a.replace( 'url->', '');
+		html += "<a href='../stamp/" + url + "/'>3秒後に移動します</a><br>";
+		document.getElementById("result").innerHTML = html;
+		setTimeout(function () {
+			location.href = '../stamp/' + a + '/';
+			console.log(a)
+		}, 3000);
+	}
+	else if ((a === 'hana') || (a === 'kouseki') || (a === 'mejedo') || (a === 'pengin')) {
+		// var url = a.replace( 'url->', '');
+		var url = a;
+		html += "<a href='../stamp/" + url + "/'>3秒後に移動します</a><br>";
+		document.getElementById("result").innerHTML = html;
+		setTimeout(function () {
+			location.href = '../stamp/' + a + '/';
+			console.log(a)
+		}, 3000);
+	}
 }
 
 function isCanvasSupported() {
