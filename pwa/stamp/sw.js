@@ -14,6 +14,7 @@ var urlsToCache = [
 	'./assets/js/common.js',
 	'./assets/js/libs.js',
 	// './assets/img/*',
+	'./assets/img/icon.png',
 	'./assets/css/common.css',
 	'./assets/css/index.css'
 ];
