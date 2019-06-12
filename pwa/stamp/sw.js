@@ -10,9 +10,11 @@ var urlsToCache = [
 	// './qrcodescan/**/*',
 	// './stamp/**/*',
 	// './stampcard/**/*',
-	'./assets/js/*',
-	'./assets/img/*',
-	'./assets/css/*'
+	'./assets/js/common.js',
+	'./assets/js/libs.js',
+	// './assets/img/*',
+	'./assets/css/common.css'
+	'./assets/css/index.css'
 ];
 
 // インストール処理
