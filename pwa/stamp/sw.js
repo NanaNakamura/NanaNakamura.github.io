@@ -11,10 +11,9 @@ var urlsToCache = [
 	// './qrcodescan/**/*',
 	// './stamp/**/*',
 	// './stampcard/**/*',
-	'./assets/js/common.js',
-	'./assets/js/libs.js',
-	// './assets/img/*',
-	'./assets/img/icon.png',
+	'./assets/**/*.js',
+	'./assets/**/*.js',
+	'./assets/**/*.png',
 	'./assets/css/common.css',
 	'./assets/css/index.css'
 ];
