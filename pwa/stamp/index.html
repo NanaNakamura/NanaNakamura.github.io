@@ -33,7 +33,7 @@
 
 	<script>
 		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('./sw.js').then(function(registration) {
+			navigator.serviceWorker.register('/pwa/stamp/sw.js').then(function(registration) {
 				console.log('ServiceWorker registration successful with scope: ', registration.scope);
 				// 登録成功
 				registration.onupdatefound = function() {
