@@ -20,7 +20,6 @@
 	<meta property="og:description" content="">
 
 	<!-- <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico"> -->
-	<link rel="manifest" href="manifest.json">
 
 	<link href="https://fonts.googleapis.com/css?family=Plaster|M+PLUS+1p&display=swap" rel="stylesheet">
 
@@ -30,24 +29,6 @@
 	<script src="assets/js/libs.js"></script>
 	<script src="assets/js/common.js"></script>
 	<!-- <script src="assets/js/index.js"></script> -->
-
-	<script>
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('sw.js').then(function(registration) {
-				console.log('ServiceWorker registration successful with scope: ', registration.scope);
-				// 登録成功
-				registration.onupdatefound = function() {
-					console.log('アップデートがあります！');
-					console.log(registration);
-					// registration.update();
-				}
-			}).catch(function(err) {
-				console.log('ServiceWorker registration failed: ', err);
-			});
-		} else {
-			console.log('no serviceWorker')
-		}
-	</script>
 </head>
 
 <body>
