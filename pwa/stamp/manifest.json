@@ -1,0 +1,16 @@
+{
+	"short_name": "スタンプカード",
+	"name": "スタンプカード",
+	"display": "standalone",
+	"start_url": "index.html",
+	"background_color": "#ffffff",
+	"orientation": "portrait",
+	"theme_color": "#ffffff",
+	"icons": [
+		{
+			"src": "assets/img/icon.png",
+			"sizes": "389x389",
+			"type": "image/png"
+		}
+	]
+}

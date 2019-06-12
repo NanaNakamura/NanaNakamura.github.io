@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>スタンプカード</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta name="viewport" content="width=800">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<!-- <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico"> -->
+	<link rel="manifest" href="manifest.json">
+
+	<link href="https://fonts.googleapis.com/css?family=Plaster|M+PLUS+1p&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/common.css">
+	<link rel="stylesheet" href="assets/css/index.css">
+
+	<script src="assets/js/libs.js"></script>
+	<script src="assets/js/common.js"></script>
+	<!-- <script src="assets/js/index.js"></script> -->
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js').then(function(registration) {
+				console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				// 登録成功
+				registration.onupdatefound = function() {
+					console.log('アップデートがあります！');
+					console.log(registration);
+					// registration.update();
+				}
+			}).catch(function(err) {
+				console.log('ServiceWorker registration failed: ', err);
+			});
+		} else {
+			console.log('no serviceWorker')
+		}
+	</script>
+</head>
+
+<body>
+	<div id="page">
+
+		<main id="main">
+			<section>
+				オフラインなう
+			</section>
+		</main>
+
+		<footer id="footer">
+		</footer>
+
+	</div>
+</body>
+</html>

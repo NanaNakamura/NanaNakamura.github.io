@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>スタンプカード</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta name="viewport" content="width=800">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<!-- <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico"> -->
+	<link rel="manifest" href="manifest.json">
+
+	<link href="https://fonts.googleapis.com/css?family=Plaster|M+PLUS+1p&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/common.css">
+	<link rel="stylesheet" href="assets/css/index.css">
+
+	<script src="assets/js/libs.js"></script>
+	<script src="assets/js/common.js"></script>
+	<!-- <script src="assets/js/index.js"></script> -->
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js').then(function(registration) {
+				console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				// 登録成功
+				registration.onupdatefound = function() {
+					console.log('アップデートがあります！');
+					console.log(registration);
+					// registration.update();
+				}
+			}).catch(function(err) {
+				console.log('ServiceWorker registration failed: ', err);
+			});
+		} else {
+			console.log('no serviceWorker')
+		}
+	</script>
+</head>
+
+<body>
+	<div id="page">
+
+		<header id="header">
+			<img src="assets/img/1.png" width="200" alt="">
+			<h1>🎴スタンプカード🎴</h1>
+			<p>（オフライン版）</p>
+		</header>
+
+		<main id="main">
+			<section>
+				<img src="assets/img/2.png" width="600" alt="">
+				<h2>🌞メニュー🌞</h2>
+				<ul>
+					<li><a href="qrcodescan/"><s>QRcodeを読み込む</s></a></li>
+					<li><a href="stampcard/">スタンプカードを確認する</a></li>
+					<li><a href="stamp/">スタンプを集める</a></li>
+				</ul>
+				<img src="assets/img/2.png" width="600" alt="">
+			</section>
+
+			<section id="attention">
+				<h2><img src="assets/img/attention1.png" width="100" alt=""></h2>
+				<p>シークレットウィンドウ、<br>
+				又はプライベートブラウズは使用せず、<br>
+				通常モードのブラウザでご使用されることをオススメします。</p>
+				<img src="assets/img/2.png" width="600" alt="">
+			</section>
+		</main>
+
+		<footer id="footer">
+			<p class="small">💻 動作推奨環境（動作確認済み）💻<br>
+			----<br>
+			QRcode読み込みを使用する場合は、<br>https環境が必須（カメラにアクセスするため）<br>
+			----<br>
+			💻 windows 💻<br>
+			Edge、Chrome（又はシークレットウィンドウモード）、Firefox（又はプライベートブラウズモード）<br>
+			💻 Mac 💻<br>
+			Safari（又はプライベートブラウズモード）、Firefox（又はプライベートブラウズモード）<br>
+			----<br>
+			📱 Android 📱<br>
+			Chrome（又はシークレットウィンドウモード）<br>
+			📱 iOS 📱<br>
+			Safari（又はプライベートブラウズモード）<br>
+			----<br>
+			※シークレットウィンドウ・プライベートブラウズモードに関しては、<br>
+			ブラウザ（タブ）を閉じると保持しているデータは削除される<br>
+			ただし、ブラウザ（タブ）を閉じなければ動作可能</p>
+		</footer>
+
+	</div>
+</body>
+</html>
