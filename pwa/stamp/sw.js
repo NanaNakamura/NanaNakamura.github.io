@@ -1,7 +1,7 @@
 // https://qiita.com/OMOIKANESAN/items/13a3dde525e33eb608ae
 
 // キャッシュファイルの指定
-var CACHE_VERSION = 'v0.0.5';
+var CACHE_VERSION = 'v0.0.4';
 var CACHE_NAME = 'stampcard-caches-' + CACHE_VERSION;
 var CACHE_KEYS = [
 	CACHE_NAME
@@ -87,7 +87,6 @@ self.addEventListener('activate', event => {
 					return !CACHE_KEYS.includes(key);
 				}).map(key => {
 					// 不要なキャッシュを削除
-					alert('新しいバージョンがインストールされました\n不要なキャッシュを削除します');
 					console.log('不要なキャッシュを削除');
 					return caches.delete(key);
 				})
