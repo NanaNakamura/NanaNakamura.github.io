@@ -1,32 +1,32 @@
 // https://qiita.com/OMOIKANESAN/items/13a3dde525e33eb608ae
 
 // キャッシュファイルの指定
-var CACHE_VERSION = 'v0.0.6';
+var CACHE_VERSION = 'v0.0.7';
 var CACHE_NAME = 'stampcard-caches-' + CACHE_VERSION;
 var CACHE_KEYS = [
 	CACHE_NAME
 ];
 console.log(CACHE_NAME);
 var urlsToCache = [
-	// './',
+	'./',
 	'./index.html',
 	'./manifest.json',
 	'./offline.html',
-	// './qrcodescan/',
+	'./qrcodescan/',
 	'./qrcodescan/index.html',
 	'./qrcodescan/js/llqrcode.js',
 	'./qrcodescan/js/webqr.js',
-	// './stamp/',
+	'./stamp/',
 	'./stamp/index.html',
-	// './stamp/pengin/',
+	'./stamp/pengin/',
 	'./stamp/pengin/index.html',
-	// './stamp/mejedo/',
+	'./stamp/mejedo/',
 	'./stamp/mejedo/index.html',
-	// './stamp/kouseki/',
+	'./stamp/kouseki/',
 	'./stamp/kouseki/index.html',
-	// './stamp/hana/',
+	'./stamp/hana/',
 	'./stamp/hana/index.html',
-	// './stampcard/',
+	'./stampcard/',
 	'./stampcard/index.html',
 	'./assets/img/icon.png',
 	'./assets/img/1.png',
