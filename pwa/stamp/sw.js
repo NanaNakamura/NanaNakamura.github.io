@@ -1,7 +1,7 @@
 // https://qiita.com/OMOIKANESAN/items/13a3dde525e33eb608ae
 
 // キャッシュファイルの指定
-var CACHE_VERSION = 'v0.0.6';
+var CACHE_VERSION = 'v0.0.7';
 var CACHE_NAME = 'stampcard-caches-' + CACHE_VERSION;
 var CACHE_KEYS = [
 	CACHE_NAME
@@ -126,10 +126,12 @@ self.addEventListener('fetch', function(event) {
 											cache.put(event.request, cloneResponse)
 											.then(function(){
 												//正常にキャッシュ追加できたときの処理(必要であれば)
+												console.log('正常にキャッシュ追加');
 											});
 										});
 								}else{
 									//正常に取得できなかったときにハンドリングしてもよい
+									console.log('正常に取得できなかった');
 									return response;
 								}
 								return response;
