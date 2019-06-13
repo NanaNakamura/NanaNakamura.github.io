@@ -103,7 +103,7 @@ function htmlEntities(str) {
 }
 
 function read(a) {
-	var html = "<br>";
+	var html = "";
 	if (a.indexOf("url->") === 0) {
 		var url = a.replace( 'url->', '');
 		html += "<a href='../stamp/" + url + "/'>3秒後に移動します</a><br>";
