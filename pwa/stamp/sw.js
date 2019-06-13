@@ -1,7 +1,7 @@
 // https://qiita.com/OMOIKANESAN/items/13a3dde525e33eb608ae
 
 // キャッシュファイルの指定
-var CACHE_VERSION = 'v0.1.1';
+var CACHE_VERSION = 'v0.2.0';
 var CACHE_NAME = 'stampcard-caches-' + CACHE_VERSION;
 var CACHE_KEYS = [
 	CACHE_NAME
@@ -57,6 +57,8 @@ var urlsToCache = [
 	'./assets/img/ra.png',
 	'./assets/img/seth.png',
 	'./assets/img/toto.png',
+	'./assets/font/Plaster-Regular.ttf',
+	'./assets/font/MPLUS1p-Regular.ttf',
 	'./assets/js/common.js',
 	'./assets/js/libs.js',
 	'./assets/css/common.css',
