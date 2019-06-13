@@ -37,7 +37,8 @@
 				console.log('ServiceWorker registration successful with scope: ', registration.scope);
 				// 登録成功
 				registration.onupdatefound = function() {
-					alert('アップデートがあります！');
+					// alert('アップデートがあります！');
+					console.log('アップデートがあります！');
 					// registration.update();
 				}
 			}).catch(function(err) {
