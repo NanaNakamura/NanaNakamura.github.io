@@ -7,13 +7,24 @@
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=400">
 	<title>read</title>
+
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../assets/img/icon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Plaster|M+PLUS+1p&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/index.css">
 	<style type="text/css">
 		body{
+			margin: 0;
 			width:100%;
 			text-align:center;
 		}
 		img{
 			border:0;
+		}
+		h2 {
+			margin-top: 60px;
 		}
 		#main{
 			margin: 15px auto;
@@ -116,12 +127,30 @@
 	<script type="text/javascript" src="js/webqr.js"></script>
 </head>
 
-<body>
+<body id="qrcodescan">
 	<div id="main">
 		<div id="header">
 			<div id="mainbody">
 				<div id="outdiv"></div>
 				<div id="result"></div>
+			</div>
+
+			<h2>QRcodeスキャンが出来ない人は</h2>
+			<div id="select">
+				<select id="selectStampPage">
+					<option value="">ここから選択</option>
+					<option value="p1">１</option>
+					<option value="p2">２</option>
+					<option value="p3">３</option>
+					<option value="p4">４</option>
+					<option value="p5">５</option>
+					<option value="p6">６</option>
+					<option value="kouseki">鉱石</option>
+					<option value="mejedo">メジェド</option>
+					<option value="hana">花札</option>
+					<option value="pengin">エジプト神</option>
+				</select>
+				<button id="selectButton">OK</button>
 			</div>
 			<!-- <div id="flipbutton">カメラを切り替える</div> -->
 		</div>
@@ -131,6 +160,16 @@
 	<footer id="footer">
 		<a href="../">トップに戻る</a>
 	</footer>
-	<script type="text/javascript">load();</script>
+	<script type="text/javascript">
+	load();
+
+	var select = document.getElementById("selectStampPage");
+	document.getElementById("selectButton").onclick = function() {
+		console.log(select.value);
+		if(select.value !=='') {
+			location.href = '../stamp/' + select.value + '/';
+		}
+	};
+	</script>
 </body>
 </html>

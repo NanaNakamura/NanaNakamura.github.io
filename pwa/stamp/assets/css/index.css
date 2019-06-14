@@ -1,1 +1,314 @@
-#page{padding:60px;text-align:center;font-size:26px;font-size:2.6rem}#page h1{font-size:32px;font-size:3.2rem;font-weight:bold}#page h1 span{vertical-align:baseline}#page button{margin:10px;padding:10px 20px;border:2px solid;border-radius:8px}#main{padding:60px 0}#main h2{padding-top:30px;font-weight:bold}#main ul{padding:30px 0}#menu p{margin:60px}#menu p small{font-size:18px;font-size:1.8rem}#attention{padding-bottom:100px}#attention h3{color:#f50000;font-weight:bold;margin:30px 0}#attention p{padding-bottom:30px}#attentionModal{position:fixed;left:0;top:0;width:100%;height:100%;overflow-y:auto;background:rgba(255,255,255,0.95);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#attentionModal .box{padding:40px}#attentionModal h3{color:#f50000;font-weight:bold;margin:30px 0}#attentionModal p{padding-bottom:30px}#attentionModal .balloon{position:relative;display:inline-block;width:320px;margin:0px 0px 0px 20px;padding:20px 30px;background:#c3ebff;color:#000000;border-radius:20px;font-size:30px;font-size:3rem;text-align:center;line-height:1.4;letter-spacing:0em;word-break:break-all}#attentionModal .balloon::before{content:'';display:block;width:0px;height:0px;position:absolute;top:50%;left:-20px;margin:-10px 0 0 0;border-top:0px solid transparent;border-right:20px solid #c3ebff;border-bottom:20px solid transparent;border-left:0px solid transparent}#stampcard ul{margin:0 auto;padding-bottom:60px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap}#stampcard ul li{position:relative;margin:0 10px 20px;padding:5px 0 0 10px;width:calc(20% - 20px);min-width:124px;height:100px;font-family:"Plaster",serif,sans-serif;text-align:left;border:2px solid;border-radius:20px}#stampcard .stamp{position:absolute;left:0;top:0;opacity:0.8;width:100%;padding:0;font-size:80px;font-size:8rem;font-size:80px;font-family:"M PLUS 1p","メイリオ",Meiryo,monospace,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",YuGothic,sans-serif;text-align:center;line-height:1}#stampcard .stamp img{width:140px;margin:-16px 0 0}#stampcard .stamp .k{margin-top:-50px}#defaultSetting{position:fixed;left:0;top:0;width:100%;height:100%;overflow-y:auto;background:rgba(255,255,255,0.95);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:20px;padding-bottom:100px;opacity:0;visibility:hidden}#defaultSetting.open{opacity:1;visibility:visible}#defaultSetting h2{margin-bottom:60px}#defaultSetting dl{margin:60px 0 120px}#defaultSetting dl dt{margin-bottom:10px;font-weight:bold}#defaultSetting input{padding:16px;border:4px dotted #000;background:#fff}#place{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}#place dl{width:33%;padding:0 20px 80px}#place img{max-width:100%}#place a{margin-left:20px}#place a img{width:28px;vertical-align:baseline}#question.open{pointer-events:none;opacity:0.2}#choice{margin-top:40px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap}#getStamp.open{pointer-events:none;opacity:0.2}#received{padding-top:60px;color:#f50000;display:none}#received.open{display:block}#received img{width:30px}body.stamp h1 img{width:40px}
+@charset "UTF-8";
+#page {
+  padding: 60px;
+  text-align: center;
+  font-size: 26px;
+  font-size: 2.6rem;
+}
+
+#page h1 {
+  font-size: 32px;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+#page h1 span {
+  vertical-align: baseline;
+}
+
+#page button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 8px;
+}
+
+#main {
+  padding: 60px 0;
+}
+
+#main h2 {
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+#main ul {
+  padding: 30px 0;
+}
+
+#menu p {
+  margin: 60px;
+}
+
+#menu p small {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+#attention {
+  padding-bottom: 100px;
+}
+
+#attention h3 {
+  color: #f50000;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+#attention p {
+  padding-bottom: 30px;
+}
+
+#attentionModal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.95);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#attentionModal .box {
+  padding: 40px;
+}
+
+#attentionModal h3 {
+  color: #f50000;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+#attentionModal p {
+  padding-bottom: 30px;
+}
+
+#attentionModal .balloon {
+  position: relative;
+  display: inline-block;
+  width: 320px;
+  margin: 0px 0px 0px 20px;
+  padding: 20px 30px;
+  background: #c3ebff;
+  color: #000000;
+  border-radius: 20px;
+  font-size: 30px;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  word-break: break-all;
+}
+
+#attentionModal .balloon::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  margin: -10px 0 0 0;
+  border-top: 0px solid transparent;
+  border-right: 20px solid #c3ebff;
+  border-bottom: 20px solid transparent;
+  border-left: 0px solid transparent;
+}
+
+#stampcard ul {
+  margin: 0 auto;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#stampcard ul li {
+  position: relative;
+  margin: 0 10px 20px;
+  padding: 5px 0 0 10px;
+  width: calc(20% - 20px);
+  min-width: 124px;
+  height: 100px;
+  font-family: "Plaster", serif, sans-serif;
+  text-align: left;
+  border: 2px solid;
+  border-radius: 20px;
+}
+
+#stampcard .stamp {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+  width: 100%;
+  padding: 0;
+  font-size: 80px;
+  font-size: 8rem;
+  font-size: 80px;
+  font-family: "M PLUS 1p", "メイリオ", Meiryo, monospace, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", YuGothic, sans-serif;
+  text-align: center;
+  line-height: 1;
+}
+
+#stampcard .stamp img {
+  width: 140px;
+  margin: -16px 0 0;
+}
+
+#stampcard .stamp .k {
+  margin-top: -50px;
+}
+
+#defaultSetting {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.95);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  padding-bottom: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#defaultSetting.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+#defaultSetting h2 {
+  margin-bottom: 60px;
+}
+
+#defaultSetting dl {
+  margin: 60px 0 120px;
+}
+
+#defaultSetting dl dt {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#defaultSetting input {
+  padding: 16px;
+  border: 4px dotted #000;
+  background: #fff;
+}
+
+#place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#place dl {
+  width: 33%;
+  padding: 0 20px 80px;
+}
+
+#place img {
+  max-width: 100%;
+}
+
+#place a {
+  margin-left: 20px;
+}
+
+#place a img {
+  width: 28px;
+  vertical-align: baseline;
+}
+
+#question.open {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+#choice {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#getStamp.open {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+#received {
+  padding-top: 60px;
+  color: #f50000;
+  display: none;
+}
+
+#received.open {
+  display: block;
+}
+
+#received img {
+  width: 30px;
+}
+
+body.stamp h1 img {
+  width: 40px;
+}
+
+#select {
+  margin: 20px auto;
+  width: 326px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#select select, #select button {
+  padding: 10px;
+  border: 1px solid #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#select select {
+  width: calc(100% - 100px);
+}
+
+#select button {
+  width: 90px;
+}

@@ -1,1 +1,155 @@
-*{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;border:0;outline:0;background:transparent;vertical-align:middle;font-size:100%;font-family:inherit;font-style:inherit;font-weight:inherit}:before,:after{-webkit-box-sizing:inherit;box-sizing:inherit;text-decoration:inherit;vertical-align:inherit}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}ol,ul{list-style:none}a{-webkit-text-decoration-skip:objects}b,strong{font-weight:bolder}em{font-style:normal}table{border-collapse:collapse;border-spacing:0}hr{display:block}input{border-radius:0}input,select{vertical-align:middle}input:focus,textarea:focus,select:focus{outline:none}textarea{overflow:auto;resize:vertical}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{cursor:pointer}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}[type="number"]{width:auto}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@font-face{font-family:'M PLUS 1p';src:url("../font/MPLUS1p-Regular.ttf") format("truetype")}@font-face{font-family:'Plaster';src:url("../font/Plaster-Regular.ttf") format("truetype")}.cf:after,.clearfix:after{content:"";clear:both;display:block}html{font-size:12px}body{min-height:100%;max-width:2000px;margin:0 auto;background-color:#fff;font-size:18px;font-size:1.8rem;font-family:"M PLUS 1p","メイリオ",Meiryo,monospace,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",YuGothic,sans-serif;color:#000;position:relative}a{display:inline-block;text-decoration:underline;-webkit-transition:all 200ms;transition:all 200ms;color:#009e3e;-webkit-tap-highlight-color:rgba(0,0,0,0.4)}a:hover{text-decoration:none}#header p{font-size:20px;font-size:2rem}#footer{padding-top:40px}#footer a{margin-top:40px}#footer .small{font-size:18px;font-size:1.8rem}
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  vertical-align: middle;
+  font-size: 100%;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+:before, :after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  -webkit-text-decoration-skip: objects;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+em {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+}
+
+input {
+  border-radius: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  cursor: pointer;
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+[type="number"] {
+  width: auto;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+}
+
+@font-face {
+  font-family: 'M PLUS 1p';
+  src: url("../font/MPLUS1p-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Plaster';
+  src: url("../font/Plaster-Regular.ttf") format("truetype");
+}
+
+.cf:after, .clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  min-height: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "M PLUS 1p", "メイリオ", Meiryo, monospace, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", YuGothic, sans-serif;
+  color: #000;
+  position: relative;
+}
+
+a {
+  display: inline-block;
+  text-decoration: underline;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  color: #009e3e;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.4);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#header p {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+#footer {
+  padding-top: 40px;
+}
+
+#footer a {
+  margin-top: 40px;
+}
+
+#footer .small {
+  font-size: 18px;
+  font-size: 1.8rem;
+}

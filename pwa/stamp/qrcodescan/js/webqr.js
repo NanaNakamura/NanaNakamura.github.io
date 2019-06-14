@@ -109,7 +109,7 @@ function read(a) {
 		html += "<a href='../stamp/" + url + "/'>3秒後に移動します</a><br>";
 		document.getElementById("result").innerHTML = html;
 		setTimeout(function () {
-			location.href = '../stamp/' + a + '/';
+			location.href = '../stamp/' + url + '/';
 			console.log(a)
 		}, 3000);
 	}
@@ -119,7 +119,18 @@ function read(a) {
 		html += "<a href='../stamp/" + url + "/'>3秒後に移動します</a><br>";
 		document.getElementById("result").innerHTML = html;
 		setTimeout(function () {
-			location.href = '../stamp/' + a + '/';
+			location.href = '../stamp/' + url + '/';
+			console.log(a)
+		}, 3000);
+	}
+	else if (a.indexOf("http://") === 0 || a.indexOf("https://") === 0) {
+		// var url = a.replace( 'url->', '');
+		var url = a;
+		html += url + "<br>";
+		html += "<a href='" + url + "'>3秒後に移動します</a><br>";
+		document.getElementById("result").innerHTML = html;
+		setTimeout(function () {
+			location.href = url;
 			console.log(a)
 		}, 3000);
 	}
