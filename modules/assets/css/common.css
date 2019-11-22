@@ -163,8 +163,16 @@ h4 {
   font-weight: bold;
 }
 
+input, textarea {
+  padding: 6px 10px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  color: #445555;
+}
+
 button {
-  padding: 4px 20px 10px;
+  border: 1px solid #44ccaa;
+  padding: 6px 20px 10px;
   background: #44ccaa;
   border-radius: 4px;
   color: #445555;
@@ -172,7 +180,7 @@ button {
 }
 
 select {
-  padding: 4px 20px 10px;
+  padding: 6px 20px 10px;
   background: #44ccaa;
   border-radius: 4px;
   color: #445555;

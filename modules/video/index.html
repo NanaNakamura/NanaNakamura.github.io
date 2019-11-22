@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>video manager</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Kosugi|Sawarabi+Mincho" rel="stylesheet">
+
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/video.css">
+
+	<script src="../assets/js/libs.js"></script>
+	<script src="../assets/js/video.js"></script>
+</head>
+
+<body>
+	<div id="page">
+
+		<header id="header">
+			<h1>Video manager</h1>
+		</header>
+
+		<main id="main">
+			<section>
+				<div id="video">
+					<div id="mainVideos">
+						<video id="videoNext" class="standby" playsinline></video>
+						<video id="videoCurrent" class="show" playsinline></video>
+					</div>
+					<img id="videoLoading" src="../assets/images/video/loading.png" alt="">
+					<div id="loading" class="active">Loading...</div>
+				</div>
+				<nav>
+					<!-- <button id="standby" class="disabled">standby</button> -->
+					<button id="play" class="disabled">play</button>
+					<button id="pause" class="disabled">pause</button>
+					<button id="next" class="disabled">play next video</button>
+				</nav>
+			</section>
+		</main>
+
+		<footer id="footer">
+			<a href="../">back</a>
+		</footer>
+
+	</div>
+</body>
+</html>

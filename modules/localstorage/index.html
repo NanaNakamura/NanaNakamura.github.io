@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Access localstorage</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Kosugi|Sawarabi+Mincho" rel="stylesheet">
+
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/localstorage.css">
+
+	<script src="../assets/js/libs.js"></script>
+	<script src="../assets/js/localstorage.js"></script>
+</head>
+
+<body>
+	<div id="page">
+
+		<header id="header">
+			<h1>Access localstorage</h1>
+		</header>
+
+		<main id="main">
+			<section>
+				<h2>add</h2>
+				<div class="box">
+					<input id="addItem" type="text" placeholder="Key">
+					<input id="addData" type="text" placeholder="Value">
+					<button id="add">追加・変更する</button>
+				</div>
+			</section>
+			<section>
+				<h2>update</h2>
+				<div class="box">
+					<select id="updateItem" class="list"></select>
+					<input id="updateData" type="text" placeholder="Value">
+					<button id="update">追加で保存する</button>
+				</div>
+			</section>
+			<section>
+				<h2>remove</h2>
+				<div class="box">
+					<select id="removeList" class="list"></select>
+					<button id="remove">削除する</button>
+				</div>
+			</section>
+			<section>
+				<h2>get</h2>
+				<div class="box">
+					<select id="getList" class="list"></select>
+					<button id="get">取得する</button>
+				</div>
+			</section>
+			<section>
+				<h2>getAll</h2>
+				<button id="all">Localstorageのすべてのデータを取得する</button>
+			</section>
+			<section>
+				<h2>clear</h2>
+				<button id="clear">Localstorageのデータを削除する</button>
+			</section>
+			<section>
+				<h2>console</h2>
+				<textarea id="log" readonly></textarea>
+				<button id="consoleReset">Consoleを消す</button>
+			</section>
+		</main>
+
+		<footer id="footer">
+			<a href="../">back</a>
+		</footer>
+
+	</div>
+</body>
+</html>

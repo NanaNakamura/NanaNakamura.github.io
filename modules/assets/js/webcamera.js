@@ -127,9 +127,7 @@ function () {
     key: "setup",
     value: function setup() {
       var self = this;
-      navigator.mediaDevices.enumerateDevices().then(function (e) {
-        return self.gotDevices(e);
-      }).catch(function (err) {
+      navigator.mediaDevices.enumerateDevices().then(self.gotDevices.bind(this)).catch(function (err) {
         self.handleError(err);
       });
       self.videoSelect.addEventListener('change', function (event) {
@@ -161,11 +159,7 @@ function () {
           } : undefined
         }
       };
-      navigator.mediaDevices.getUserMedia(constraints).then(function (e) {
-        return self.gotStream(e);
-      }).then(function (e) {
-        return self.gotDevices(e);
-      }).catch(function (err) {
+      navigator.mediaDevices.getUserMedia(constraints).then(self.gotStream.bind(self)).then(self.gotDevices.bind(self)).catch(function (err) {
         self.handleError(err);
       });
     }
@@ -185,7 +179,7 @@ function () {
         while (select.firstChild) {
           select.removeChild(select.firstChild);
         }
-      }); // console.log(deviceInfos.length);
+      });
 
       for (var i = 0; i !== deviceInfos.length; ++i) {
         var deviceInfo = deviceInfos[i];
