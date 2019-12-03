@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="noindex,nofollow">
+
+	<title>Get parameter</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Kosugi|Sawarabi+Mincho" rel="stylesheet">
+
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/parameter.css">
+
+	<script src="../assets/js/libs.js"></script>
+	<script src="../assets/js/parameter.js"></script>
+</head>
+
+<body>
+	<div id="page">
+
+		<header id="header">
+			<h1>Get parameter</h1>
+		</header>
+
+		<main id="main">
+			<section>
+				<h2>get</h2>
+				<div class="box">
+					/?<input id="parameter" type="text" placeholder="id=hoge&key=fuga" value="id=hoge&key=fuga">
+					<button id="get">取得する</button>
+				</div>
+			</section>
+			<section>
+				<h2>get(key)</h2>
+				<div class="box">
+					<input id="key" type="text" placeholder="key">
+					<button id="getKey">取得する</button>
+				</div>
+			</section>
+			<section>
+				<h2>console</h2>
+				<textarea id="log" readonly></textarea>
+				<button id="consoleReset">Consoleを消す</button>
+			</section>
+		</main>
+
+		<footer id="footer">
+			<a href="../">back</a>
+		</footer>
+
+	</div>
+</body>
+</html>

@@ -149,7 +149,6 @@ function () {
   }
   /**
    * setup
-   * @return {Promise} Variance機能が使えるか判定
    */
 
 

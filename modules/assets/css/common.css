@@ -187,6 +187,19 @@ select {
   font-weight: bold;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu li {
+  text-align: left;
+}
+
 .menu li + li {
   margin-top: 8px;
 }
