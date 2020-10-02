@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="noindex,nofollow">
+
+	<title>Get Average Color By Image</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Kosugi|Sawarabi+Mincho" rel="stylesheet">
+
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/averagecolorbyimage.css">
+
+	<script src="../assets/js/libs.js"></script>
+	<script src="../assets/js/averagecolorbyimage.js"></script>
+</head>
+
+<body>
+	<div id="page">
+
+		<header id="header">
+			<h1>Get Average Color By Image</h1>
+		</header>
+
+		<main id="main">
+			<section id="container">
+				<h2>image select</h2>
+				<div class="select">
+					<label for="imageSource">Drop your .png or .jpg files here.</label>
+					<input type="file" id="imageSource" name="avatar" accept="image/png, image/jpeg">
+				</div>
+			</section>
+
+			<section>
+				<h2>image preview</h2>
+				<div id="preview"></div>
+			</section>
+
+			<section>
+				<h2>Average Color</h2>
+				<div id="color"><span>#ffffff</span></div>
+			</section>
+
+			<section>
+				<h2>console</h2>
+				<textarea id="log" readonly></textarea>
+				<button id="consoleReset">Consoleを消す</button>
+			</section>
+		</main>
+
+		<footer id="footer">
+			<a href="../">back</a>
+		</footer>
+
+	</div>
+</body>
+</html>

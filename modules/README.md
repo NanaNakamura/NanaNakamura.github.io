@@ -3,6 +3,11 @@
 
 ---
 
+## 📌 Get Average Color By Image
+[🐙docs](https://github.com/NanaNakamura/module/tree/master/src/js/modules/averagecolorbyimage)　
+[🔗 demo](https://nananakamura.github.io/modules/averagecolorbyimage/)　
+✅Use javascripts
+
 ## 🔢 Variance value
 [🐙docs](https://github.com/NanaNakamura/module/tree/master/src/js/modules/variance)　
 [🔗 demo](https://nananakamura.github.io/modules/variance/)　
