@@ -3,6 +3,11 @@
 
 ---
 
+## 📌 Barcode Reader
+[🐙docs](https://github.com/NanaNakamura/module/tree/master/src/js/modules/barcodereader)　
+[🔗 demo](https://nananakamura.github.io/modules/barcodereader/)　
+✅Use javascripts
+
 ## 📌 Get Average Color By Image
 [🐙docs](https://github.com/NanaNakamura/module/tree/master/src/js/modules/averagecolorbyimage)　
 [🔗 demo](https://nananakamura.github.io/modules/averagecolorbyimage/)　
