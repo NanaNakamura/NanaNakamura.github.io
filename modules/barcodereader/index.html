@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="noindex,nofollow">
+
+	<title>BarcodeReader</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Kosugi|Sawarabi+Mincho" rel="stylesheet">
+
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/barcodereader.css">
+
+	<script src="../assets/js/libs.js"></script>
+	<script src="../assets/js/barcodereader.js"></script>
+</head>
+
+<body>
+	<div id="page">
+
+		<header id="header">
+			<h1>BarcodeReader</h1>
+		</header>
+
+		<main id="main">
+			<section id="container">
+				<h2>Controls</h2>
+				<div class="controls">
+					<fieldset class="reader-config-group">
+						<label>
+							<span>Barcode-Type</span>
+							<select name="decoder_readers">
+								<option value="code_128" selected="selected">Code 128</option>
+								<option value="ean" selected="selected">EAN</option>
+								<option value="ean_extended">EAN-extended</option>
+								<option value="ean_8">EAN-8</option>
+							</select>
+						</label>
+						<!-- <label>
+							<span>Resolution (width)</span>
+							<select name="input-stream_constraints">
+								<option value="320x240">320px</option>
+								<option value="640x480">640px</option>
+								<option selected="selected" value="800x600">800px</option>
+								<option value="1280x720">1280px</option>
+								<option value="1600x960">1600px</option>
+								<option value="1920x1080">1920px</option>
+							</select>
+						</label> -->
+						<!-- <label>
+							<span>Patch-Size</span>
+							<select name="locator_patch-size">
+								<option value="x-small">x-small</option>
+								<option value="small">small</option>
+								<option selected="selected" value="medium">medium</option>
+								<option value="large">large</option>
+								<option value="x-large">x-large</option>
+							</select>
+						</label> -->
+						<!-- <label>
+							<span>Half-Sample</span>
+							<input type="checkbox" checked="checked" name="locator_half-sample" />
+						</label> -->
+						<!-- <label>
+							<span>Workers</span>
+							<select name="numOfWorkers">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option selected="selected" value="4">4</option>
+								<option value="8">8</option>
+							</select>
+						</label> -->
+						<label>
+							<span>Camera</span>
+							<select name="input-stream_constraints" id="deviceSelection">
+							</select>
+						</label>
+					</fieldset>
+					<fieldset class="input-group">
+						<button class="stop">Camera Stop</button>
+					</fieldset>
+				</div>
+			</section>
+
+			<section>
+				<h2>Camera</h2>
+				<div id="interactive" class="viewport"></div>
+			</section>
+
+			<section>
+				<h2>Result</h2>
+				<div id="result">
+					<ul class="thumbnails"></ul>
+					<ul class="collector"></ul>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer">
+			<a href="../">back</a>
+		</footer>
+
+	</div>
+</body>
+</html>
