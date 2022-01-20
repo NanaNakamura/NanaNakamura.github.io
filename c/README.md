@@ -13,7 +13,7 @@ htmlタグと、scss(or css)のソースを書き出してくれます
 ---
 
 #### 🗾 グーグルマップを表示するコンポーネント  
-[https://dev.1-10.net/nakamura/c/vue-gmap/](https://dev.1-10.net/nakamura/c/vue-gmap/)  
+[https://dev.1-10.net/nakamura/c/vue-gmap/](https://dev.1-10.net/nakamura/c/vue-gmap/) 🔒  
 [🐙GitHub](https://github.com/NanaNakamura/vue-gmap)　
 ✅Use only Vue.js
 <br><br>
